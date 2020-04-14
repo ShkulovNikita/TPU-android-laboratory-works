@@ -1,0 +1,14 @@
+apply from: rootProject.file('feature.gradle')
+
+android.resourcePrefix 'lab5_'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "androidx.recyclerview:recyclerview:$recyclerview"
+    implementation "com.google.android.material:material:$material"
+
+    implementation "androidx.appcompat:appcompat:$appcompat"
+
+    implementation "com.squareup.okhttp3:okhttp:3.10.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:3.10.0"
+}
